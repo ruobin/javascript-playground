@@ -14,4 +14,12 @@ var singleNumber = function (nums) {
     return map.keys().next().value;
 };
 
-console.log(singleNumber([2, 2, 1]));
+var singleNumberWithBitwiseXOR = function (nums) {
+    let xor = 0;
+    nums.forEach(element => {
+        xor ^= element;
+    });
+    return xor;
+};
+
+console.log(singleNumberWithBitwiseXOR([4, 1, 2, 1, 2]));

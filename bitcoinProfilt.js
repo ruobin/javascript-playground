@@ -35,10 +35,14 @@ const inputData = [
 // [{"date":3,"gain_or_loss":89},{"date":4,"gain_or_loss":-37},{"date":6,"gain_or_loss":-155}]
 
 function buildTheData(inputData) {
+    var $a, x, Y, _Z, With;
+    m = "dfsd";
+    var a=Object.seal(Object.preventExtensions({"name": "John", "Age":21}));
+
     let balance = 0;
     let queue = [];
     let results = [];
-    for (let i = 0; i < inputData.length; i++) {
+    for (i = 0; i < inputData.length; i++) {
         if (inputData[i].type === "buy") {
             queue.push({ amount: inputData[i].amount, price: inputData[i].price });
         } else if (inputData[i].type === "sell") {
