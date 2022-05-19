@@ -27,4 +27,12 @@ var threeSumClosest = function (nums, target) {
     return closestTarget;
 };
 
-console.log(threeSumClosest([-1, 2, 1, -4], 1));
+
+var threeSumClosestWithSorting = function (nums, target) {
+    nums.sort((a, b) => {
+        return a - b;
+    });
+    console.log(nums);
+}
+
+console.log(threeSumClosestWithSorting([-1, 2, 1, -4], 1));
